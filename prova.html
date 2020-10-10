@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 35px;
+            color: rgb(119, 41, 209);
+        }
+
+        h2 {
+            font-size: 30px;
+            color: rgb(119, 60, 209);
+        }
+
+        #bla {
+            border: 2px dotted;
+        }
+
+        .h-main {
+            color: rgba(221, 20, 20, 0.856);
+        }
+
+        .button1 {
+            background-color: turquoise;
+        }
+
+        .header {
+            width: 50%;
+            margin: 20px;
+            background-color: rgb(210, 233, 175);
+        }
+
+        .spazi {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Esempio pagina webbe</h1>
+    <h1 class="h-main" id="bla"> uelcam dis is an exampol of a webbe peige on interne</h1>
+    <h2 class="h-main">dis sait is abaut nafing so dont expect to sii or reed iusful fings</h2>
+    <h3>oll raight reserved FrankM company </h3>
+
+    <div class="header">
+        <h1>In a far far pleis der uos a littol big hiuman det uonts to bi samfing.
+            Bat ui dont nou de stori so go on uif oder tolks
+        </h1>
+        <h2>it uos outumn end de sammer hes alredi finishd. bicous det is hau fings uork,
+            after sammer der is outumn evri f***ing iar. </h2>
+    </div>
+
+    <h2 class="h-main">du iu engioi de stori?</h2>
+
+    <input class="h-main button1" type="button" value="si">
+    <button>ies </button>
+
+    <div class="header">
+        <a href="/comandi.html">link to mor intresting fings</a>
+        <a class="spazi" href="https://www.google.it/">Or go out from hiar on gugool</a>
+    </div>
+
+    <hr>
+    <input class="button1" type="button" id="istruz" value="HEI!! CLICK HIAR TO FAIND SUPER POWERS END MOR...">
+
+</body>
+
+<script>
+    const istruz = document.querySelector('#istruz');
+    istruz.addEventListener('click', (evento1) => {
+        const body = document.querySelector('body');
+        if (body.style.backgroundColor === 'yellow') {
+            body.style.backgroundColor = 'white';
+        } else {
+            body.style.backgroundColor = 'yellow';
+        }
+
+    })
+    console.log(istruz)
+</script>
+
+</html>
